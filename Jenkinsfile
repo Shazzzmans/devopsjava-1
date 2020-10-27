@@ -43,7 +43,7 @@ pipeline {
         sh 'mvn package'
       }
     }
-    /*
+
       stage ('Artifactory configuration') {
           steps {
               rtServer (
@@ -67,7 +67,7 @@ pipeline {
               )
           }
       }
-*/
+
       stage ('Exec Maven') {
           steps {
               rtMavenRun (
