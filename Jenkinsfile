@@ -34,6 +34,8 @@ pipeline {
               }
           }
       }
+*/
+    
      stage('Test') {
       steps {
         sh 'mvn test'
@@ -44,7 +46,7 @@ pipeline {
         sh 'mvn package'
       }
     }
-
+/*
       stage ('Artifactory configuration') {
           steps {
               rtServer (
